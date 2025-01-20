@@ -1,6 +1,7 @@
 /* Header Container */
 .header {
   display: flex;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +17,8 @@
 /* Header Content */
 .header-content {
   max-width: 50%;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header-content h1 {
