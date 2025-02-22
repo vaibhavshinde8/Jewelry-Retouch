@@ -1,0 +1,231 @@
+/* Portfolio Section */
+.portfolio {
+  background-color: #FAF8ED;
+  text-align: center;
+  padding: 30px 5%;
+}
+
+/* Portfolio Heading */
+.portfolio h2 {
+  font-size: 2.2rem;
+  font-family: 'Domine', serif;
+  color: #954000;
+  margin-bottom: 10px;
+}
+
+/* Portfolio Description */
+.portfolio p {
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  color: #DAA520;
+  margin-bottom: 25px;
+  padding: 0 5%;
+}
+
+/* Portfolio Tabs */
+.portfolio-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.portfolio-tab {
+  padding: 8px 18px;
+  border: 1px solid #845616;
+  border-radius: 20px;
+  background-color: #FAF8ED;
+  font-size: 0.95rem;
+  color: #845616;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-tab.active,
+.portfolio-tab:hover {
+  background-color: #845616;
+  color: #ffffff;
+}
+
+/* Show More / Show Less Buttons */
+.show-buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.show-more,
+.show-less {
+  background-color: #954000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.show-more:hover,
+.show-less:hover {
+  background-color: #DAA520;
+  transform: scale(1.05);
+}
+
+.show-less a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Portfolio Gallery Grid */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+  padding: 0 5%;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;  /* Ensures full image is visible without cropping */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio p {
+    font-size: 1rem;
+  }
+
+  .portfolio-tabs {
+    gap: 10px;
+  }
+
+  .portfolio-tab {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  .show-buttons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .show-more,
+  .show-less {
+    width: 70%;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+
+  /* Ensure images show fully on mobile */
+  .portfolio-item img {
+    width: 100%;
+    height: 300px; /* Increased height for better visibility */
+    object-fit: contain;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 20px 5%;
+  }
+
+  .portfolio h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-tabs {
+    gap: 8px;
+  }
+
+  .portfolio-tab {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border-radius: 12px;
+  }
+
+  .show-more,
+  .show-less {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* Ensure images do not get cropped */
+  .portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+  }
+}
+
+/* Very Small Screens (max-width: 320px) */
+@media (max-width: 320px) {
+  .portfolio h2 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-tab {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .show-more,
+  .show-less {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  /* Keep images fully visible */
+  .portfolio-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+}
+
+/* Keeping Image Sizes the Same for Larger Screens */
+@media (min-width: 769px) {
+  .portfolio-item img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
