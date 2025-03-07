@@ -3,6 +3,8 @@
   background-color: #FAF8ED;
   text-align: center;
   padding: 30px 5%;
+  margin-bottom: 10px;
+
 }
 
 /* Portfolio Heading */
@@ -10,6 +12,7 @@
   font-size: 2.2rem;
   font-family: 'Domine', serif;
   color: #954000;
+
   margin-bottom: 10px;
 }
 
