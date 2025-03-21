@@ -14,9 +14,10 @@ const JewelryService = () => {
 
   return (
     <section className="jewelry-service" ref={ref}>
-      {/* Left Image */}
+      
       <motion.div
         className="service-image"
+
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -27,6 +28,9 @@ const JewelryService = () => {
           alt="Traditional Jewelry"
           className="jewelry-image"
           loading="lazy"
+
+
+          
         />
       </motion.div>
 
