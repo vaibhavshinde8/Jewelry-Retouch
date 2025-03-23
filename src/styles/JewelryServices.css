@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   padding: 40px 20px;
+  
   margin: 0 auto; /* Center the section */
   width: 100%; /* Limit the width for larger screens */
 }
