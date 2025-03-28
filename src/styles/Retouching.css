@@ -1,0 +1,153 @@
+/* Photo Services Section */
+.photo-services {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.photo-services h2 {
+  font-size: 2.5rem;
+  color: #954000;
+  margin-bottom: 20px;
+  font-family: "Domine", serif;
+  font-weight: bold;
+}
+
+.photo-services p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+/* Container for all services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptive grid */
+  gap: 30px; /* Space between items */
+  justify-items: center; /* Center-align the items */
+}
+
+/* Individual service item */
+.services-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center-align everything horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* Limits the max width of the item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.services-item:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image Styling */
+.service-image {
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures image doesn’t stretch */
+  border-radius: 5px;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+/* Title Styling */
+.services-item h3 {
+  font-size: 1.6rem;
+  color: #845616;
+  font-family: "Domine", serif;
+  font-weight: bold;
+  margin: 0; /* Remove default margins */
+  line-height: 1.2; /* Adjust line spacing */
+  margin-bottom: 10px; /* Space below the title */
+  min-height: 50px; /* Ensures titles are aligned */
+}
+
+/* Description Styling */
+.services-item p {
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  line-height: 1.5; /* Line spacing for readability */
+  margin: 0; /* Remove default margins */
+  min-height: 70px; /* Consistent height for descriptions */
+}
+
+/* Image Container */
+.image-container {
+  margin-bottom: 15px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* Title Container */
+.title-container h3 {
+  font-size: 1.8rem;
+  color: #845616;
+  margin-bottom: 10px;
+  font-family: "Domine", serif;
+  font-weight: bold;
+}
+
+/* Description Container */
+.description-container p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    gap: 20px;
+  }
+
+  .title-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .description-container p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    gap: 15px;
+  }
+
+  .services-item {
+    padding: 15px;
+  }
+
+  .title-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .description-container p {
+    font-size: 0.9rem;
+  }
+}

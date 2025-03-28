@@ -1,0 +1,143 @@
+.footer {
+  width: 100%;
+  background: #faf8ed;
+  color: black;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* plane */
+.newsletter-button:hover > .fa-plane{
+  transition: all;
+  transition-duration: 200ms;
+  rotate: -45deg;
+}
+
+.newsletter-button:hover{
+  transition: all;
+  transition-duration: 200ms;
+  background: #7D5115;
+}
+
+.footer-container {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-social {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-title, .newsletter-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #954000;
+}
+
+.footer-line, .newsletter-line {
+  background: #7D5115;
+  width: 40%;
+  height: 2px;
+  border: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #954000;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #7D5115;
+}
+
+.divider {
+  background: #7D5115;
+  width: 1px;
+  height: 140px;
+}
+
+.newsletter-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.newsletter-description {
+  width: 300px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.newsletter-input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  flex: 1;
+}
+
+.newsletter-button {
+  background: #DAA520;
+  border: none;
+  padding: 10px 20px ;
+  
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-container{
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+ 
+  .footer-social p, .footer-social h3{
+    display: none;
+  }
+
+  .divider{
+    display: none;
+  }
+}

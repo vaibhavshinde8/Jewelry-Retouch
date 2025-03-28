@@ -1,0 +1,190 @@
+/* Jewelry Services Section */
+.jewelry-services {
+  background-color: #ffffff; /* Clean and elegant background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 auto; /* Center the section */
+  width: 100%; /* Limit the width for larger screens */
+}
+
+.jewelry-services h2 {
+  font-family: "Domine", serif;
+  color: #954000;
+  font-size: 2.5rem;
+  margin-bottom: 10px; /* Add space between heading and description */
+}
+
+.jewelry-services p {
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Service List Container */
+.service-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+  flex-wrap: nowrap; /* Prevent wrapping for larger screens */
+  width: 100%;
+  padding: 0 20px;
+  overflow-x: auto; /* Add horizontal scroll for small screens */
+  scrollbar-width: none; /* Hide scrollbar for a clean look */
+}
+
+.service-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 1024px) {
+  .service-list {
+    flex-wrap: wrap; /* Allow wrapping on medium screens */
+    justify-content: space-around;
+  }
+
+  .service-item {
+    max-width: 45%; /* Two items per row */
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .service-item {
+    max-width: 48%; /* Slight adjustment for smaller screens */
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .service-item {
+    max-width: 100%; /* One item per row for extra small screens */
+  }
+
+  .service-list {
+    gap: 20px; /* Adjust gap for extra small screens */
+  }
+}
+
+
+/* Individual Service Item */
+.service-item {
+  text-align: center;
+  padding: 20px;
+  max-width: 300px; /* Uniform card size */
+  background-color: transparent;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Item Images */
+.service-item img {
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures uniformity while maintaining aspect ratio */
+  border-radius: 50%; /* Circular images */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.service-item img:hover {
+  transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+/* Service Item Titles */
+.service-item h3 {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Service Item Descriptions */
+.service-item p {
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 1024px) {
+  .jewelry-services {
+    padding: 30px 15px; /* Reduce padding */
+  }
+
+  .jewelry-services h2 {
+    font-size: 2.5rem;
+  }
+
+  .jewelry-services p {
+    font-size: 1.3rem;
+  }
+
+  .service-item {
+    max-width: 250px; /* Smaller cards for medium screens */
+  }
+
+  .service-item img {
+    max-width: 200px; /* Adjust image size */
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .jewelry-services h2 {
+    font-size: 2rem;
+  }
+
+  .jewelry-services p {
+    font-size: 1.1rem;
+    padding: 0 10px; /* Add padding for smaller screens */
+  }
+
+  .service-item {
+    max-width: 100%; /* Full width for small screens */
+  }
+
+  .service-item img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .jewelry-services h2 {
+    font-size: 1.8rem;
+  }
+
+  .jewelry-services p {
+    font-size: 1rem;
+    line-height: 1.5; /* Adjust readability for smaller text */
+  }
+
+  
+    .service-item img {
+      width: 140px;
+      height: 140px;
+    }
+
+  .service-list {
+    gap: 20px; /* Adjust gap for small screens */
+  }
+}

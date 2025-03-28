@@ -1,0 +1,125 @@
+/* PhotoSolutions Section */
+.photo-solutions {
+  background: linear-gradient(135deg, #FCE5D8, #FFFFFF); /* Subtle gradient background */
+  padding: 50px 0; /* Equal top and bottom padding */
+  text-align: center;
+}
+
+/* Title Styling */
+.photo-solutions h2 {
+  font-size: 2.5rem;
+  font-family: "Domine", serif;
+  color: #954000;
+  margin: 0 5%;
+  line-height: 1.4; /* Slightly increased for better readability */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.photo-services p {
+  color: #DAA520;
+  font-family: Arial;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptive grid */
+  gap: 30px; /* Consistent spacing between items */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%; /* Padding for edge spacing */
+  justify-items: center; /* Centers grid items */
+}
+
+/* Solution Item Styling */
+.solution-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #FAF8ED;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Clean, subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-item:hover {
+  transform: translateY(-8px); /* More noticeable lift on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image Styling */
+.solution-image {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 15px;
+  border-radius: 5px; /* Consistent border radius */
+  display: block;
+}
+
+/* Solution Title Styling */
+.solution-item h3 {
+  margin: 15px 0 10px;
+  font-size: 1.8rem;
+  color: #845616;
+  font-family: "Domine", serif;
+  font-weight: bold;
+}
+
+/* Solution Description Styling */
+.solution-item p {
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  color: #333; /* Darker, easier-to-read color */
+  line-height: 1.8; /* Increased for better readability */
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (768px or smaller) */
+@media (max-width: 768px) {
+  .photo-solutions h2 {
+    font-size: 2.2rem;
+  }
+
+  .solutions-grid {
+    gap: 20px;
+  }
+
+  .solution-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .solution-item p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (480px or smaller) */
+@media (max-width: 480px) {
+  .photo-solutions h2 {
+    font-size: 2rem;
+  }
+
+  .solutions-grid {
+    gap: 15px;
+  }
+
+  .solution-item {
+    max-width: 90%; /* Full width with padding */
+    margin: 0 auto;
+  }
+
+  .solution-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .solution-item p {
+    font-size: 0.9rem;
+  }
+}
