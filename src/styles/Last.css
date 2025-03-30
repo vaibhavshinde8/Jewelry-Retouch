@@ -2,6 +2,7 @@
 .last-footer {
   background-color: #f8f9fa;
   padding: 5px 10px;
+  
 }
 
 .last-two-things{
@@ -16,6 +17,8 @@
   align-items: center;
   justify-content: space-between; /* Evenly distribute elements */
   flex-wrap: wrap;
+  padding: 5px 10px;
+  
   gap: 20px;
 }
 .footer-containers a {
